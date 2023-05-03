@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 120px;
+}
+
+.container .box {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    gap: 30px;
+}
+
+.content .right,
+.content .left {
+    flex: 1;
+}
+
+.content .right h1 {
+    line-height: 36px;
+    margin-bottom: 24px;
+    color: var(--gray);
+}
+.content .right p {
+    font-weight: 400;
+    font-size: var(--font-text);
+    margin-bottom: 40px;
+    line-height: 36px;
+}
+.content .right a {
+    background: var(--primary-hover);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+.content .left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 820px) {
+    .content .right h1 {
+        line-height: 30px;
+        font-size: 1.3rem;
+    }
+    .content .right p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 820px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        margin-top: 100px;
+    }
+    .container .box .programs {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .container .box .programs::-webkit-scrollbar {
+        background: transparent;
+    }
+    .container .box .programs::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}

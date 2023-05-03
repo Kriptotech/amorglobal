@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Kanit-Regular";
+    src: url(fonts/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+    font-family: "Kanit-Bold";
+    src: url(fonts/Kanit/Kanit-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Sigmar";
+    src: url(fonts/Sigmar/Sigmar-Regular.ttf);
+}
+
+:root {
+    --background: rgb(255, 255, 255);
+    --white: rgb(255, 255, 255);
+    --green: #04d361;
+    --box-background: #f8f8f8;
+    --discover-blue: #4863f7;
+    --primary-low: #182049;
+    --primary: #086ad8;
+    --primary-darker: #005eca;
+    --primary-hover: #297ad6a1;
+    --dark: #333333;
+    --text: #696969;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--dark);
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background);
+}

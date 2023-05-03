@@ -1,0 +1,14 @@
+.app {
+    z-index: 1;
+    overflow: hidden;
+    /* max-width: 1800px;
+    margin: auto; */
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(229, 76%, 66%);
+    border-radius: 15px;
+}
